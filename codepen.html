@@ -1,0 +1,86 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codepen</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" class="site__icon">
+        <ul class="menu">
+          <li class="menu__list"><a href="index.html#home" class="menu__link"><i class="fa-solid fa-house"></i>  home</a></li>
+          <li class="menu__list"><a href="index.html#sites" class="menu__link"><i class="fa-solid fa-code"></i>  sites</a></li>
+          <li class="menu__list"><a href="#contacts" class="menu__link"><i class="fa-solid fa-message"></i>  contacts</a></li>
+        </ul>
+        <ul class="top__contact">
+          <li class="top__contact__link"><a href="viber://chat?number=%2B380685271660" target="_blank"><i class="fa-brands fa-viber"></i></a></li>
+          <li class="top__contact__link"><a href="https://instagram.com/makar_m_hisko?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li class="top__contact__link"><a href="https://t.me/Makar_hysko" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="folder kube"><img src="https://i.ytimg.com/vi/WMmMLplLWH0/maxresdefault.jpg" alt=""></div>
+    <div class="text_page kube">
+      <div class="text">
+        <p>Переклад з англійської-CodePen — це онлайн-спільнота для тестування та демонстрації фрагментів коду HTML, CSS та JavaScript, створених користувачами. Він функціонує як онлайн-редактор коду та навчальне середовище з відкритим кодом, де розробники можуть створювати фрагменти коду, які називаються «ручками», і тестувати їх.</p>
+      </div>
+    </div>
+  </main>
+<footer class="footer" id="footer">
+    <div class="section">
+          <div class="section_2" id="contacts">        
+            <div class="clock footer-col">
+              <h4>Today</h4>
+              <ul>
+                <li id="Date"></li>
+                <li id="Time"></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><span href="">Hysko Makar Maksymovych</span></li>
+                    <li><span href="">+380 68 527 16 60</span></li>
+                    <li><span href="">hysko.mm@gmail.com</span></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About me</h4>
+                <ul>
+                    <li><span href="#">Birthday: 03/04/2012</span></li>
+                    <li><span href="#">Years: 11</span></li>
+                    <li><span href="#">Hobby: programming</span></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <ul class="footer__icon">
+                <li class="top__contact__link"><a href="viber://chat?number=%2B380685271660" target="_blank"><i class="fa-brands fa-viber"></i></a></li>
+                <li class="top__contact__link"><a href="https://instagram.com/makar_m_hisko?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="top__contact__link"><a href="https://t.me/Makar_hysko" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+              </ul>
+          </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+      let date;  // Змінна часу
+
+      setInterval( function() {
+        date = new Date();
+
+        document.getElementById("Date").innerHTML = (date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear() );
+        document.getElementById("Time").innerHTML = (date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() );
+      }, 1000)
+    </script> 
+  </footer>
+</body>
+</html>
